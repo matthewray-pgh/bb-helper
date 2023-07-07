@@ -1,0 +1,57 @@
+$validation-color: red;
+
+.login-form {
+
+  h1 {
+    margin: 10px;
+  }
+
+  &__validation {
+    color: $validation-color;
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-gap: 10px;
+
+    &--icon {
+      justify-self: flex-end;
+    }
+
+    &--button {
+      background-color: transparent;
+      border: solid 1px $validation-color;
+      border-radius: 15px;
+      color: $validation-color;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .login-form {
+    width: 100%;
+    display: grid;
+    margin: 100px 0;
+  }
+}
+
+/* tablet */
+@media only screen and (min-width: 600px) {
+  .login-form {
+    margin: 50px auto;
+    width: 500px;
+    display: grid;
+  }
+}
+
+/* desktops */
+@media only screen and (min-width: 1024px) {
+  .login-form {
+    margin: 75px auto;
+    width: 600px;
+    display: grid;
+  }
+}
