@@ -1,0 +1,70 @@
+$primary: #3eaa83;
+$primary-action: #1d765a;
+$background: #282c34;
+$font-color: #fff;
+
+.input-field {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid $primary;
+
+  label {
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    padding: 0 5px;
+
+    color: $primary;
+    background-color: $background;
+    font-weight: bold;
+  }
+
+  input {
+    width: calc(100% - 40px);
+    padding: 10px 20px;
+  }
+}
+
+.button-primary {
+  background-color: $primary;
+  color: $font-color;
+  border: none;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $primary-action;
+  }
+}
+
+.button-secondary {
+  background-color: $background;
+  color: $primary;
+  border: $primary 2px solid;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $font-color;
+    background-color: $primary-action;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {}
+
+/* tablet */
+@media only screen and (min-width: 768px) {}
+
+/* desktops */
+@media only screen and (min-width: 1200px) {}
+
